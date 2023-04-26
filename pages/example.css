@@ -1,0 +1,286 @@
+    .goBack {
+        font-size: 1.3em;
+        margin-left: 1em;
+        position: relative;
+        margin-top: .1em;
+        overflow: hidden;
+    }
+
+    .goBack::before {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        transition: .3s;
+        transform: translate(-100px);
+    }
+
+    .goBack:hover:before {
+        transition: .3s;
+        transform: translate(0);
+    }
+
+    /* CONTENT */
+
+    .modpack__name {
+        font-size: 2em;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        margin-top: 1em;
+    }
+
+    .flex-column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* SLIDER */
+
+    .slider {
+        position: relative;
+        padding: 0 3em;
+        width: 70%;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    .slider .slick-list {
+        border-radius: 1em;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .slider .slick-arrow {
+        position: absolute;
+        top: 40%;
+        z-index: 10;
+        font-size: 0;
+        width: 30px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: 0;
+        background: url('../img/slider.img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: 0;
+
+        background: url('../img/slider.img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    }
+
+    .slider .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider .slick-dots li {
+        list-style: none;
+        margin-left: .5em;
+    }
+
+    .slider .slick-dots button {
+        font-size: 0;
+        background-color: #fff;
+        border: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .slider .slick-dots li.slick-active  button{
+        background-color: #59595900;
+        border: 1px solid #fff;
+    }   
+
+    /* TABS */
+
+    .tabs {
+        width: 80%;
+        color: #fff;
+    }
+
+    .tabs__item {
+        font-size: 1.3em;
+        margin-right: .5em;
+        transition: .3s;
+        padding: .2em 1em;
+        border-radius: .5em;
+    }
+
+    .tabs__item:hover {
+        background-color: #fff;
+        color: #595959;
+        transition: .3s;
+    }
+
+    .tabs_body {
+        background-color: #fff;
+        color: #595959;
+        border-radius: .5em;
+        margin: 1em;
+    }
+
+    .tabs_body p {
+        padding: .5em;
+    }
+
+    .tabs__block {
+        display: none;
+    }
+
+    .tab_active {
+        display: block;
+    }
+
+    .tab_active__button {
+        border-bottom: 1px solid #fff;
+    }
+
+    @media screen and (max-width: 990px) {
+        .tabs__items {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        .slider {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 590px) {
+        .tabs__items {
+        font-size: .7em;
+        }
+        .slider .slick-arrow {
+            width: 10px;
+            height: 30px;
+        }
+        .slider {
+            padding: 0 1em;
+        }
+
+    }
+
+    @media screen and (max-width: 400px) {
+        .tabs__items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tabs__item {
+            margin-top: .5em;
+        }
+    }
+
+    /* PRELOADER */
+    @keyframes ldio-ecb42vfwtb {
+    0% { transform: rotate(0) }
+    100% { transform: rotate(360deg) }
+    }
+    .ldio-ecb42vfwtb div { box-sizing: border-box!important }
+    .ldio-ecb42vfwtb > div {
+    position: absolute;
+    width: 165.71px;
+    height: 165.71px;
+    top: 30.645px;
+    left: 30.645px;
+    border-radius: 50%;
+    border: 11.35px solid #000;
+    border-color: #ea8e27 transparent #ea8e27 transparent;
+    animation: ldio-ecb42vfwtb 1.5873015873015872s linear infinite;
+    }
+    .ldio-ecb42vfwtb > div:nth-child(2) { border-color: transparent }
+    .ldio-ecb42vfwtb > div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    }
+    .ldio-ecb42vfwtb > div:nth-child(2) div:before, .ldio-ecb42vfwtb > div:nth-child(2) div:after { 
+    content: "";
+    display: block;
+    position: absolute;
+    width: 11.35px;
+    height: 11.35px;
+    top: -11.35px;
+    left: 65.83px;
+    background: #ea8e27;
+    border-radius: 50%;
+    box-shadow: 0 154.36px 0 0 #ea8e27;
+    }
+    .ldio-ecb42vfwtb > div:nth-child(2) div:after { 
+    left: -11.35px;
+    top: 65.83px;
+    box-shadow: 154.36px 0 0 0 #ea8e27;
+    }
+    .loadingio-spinner-dual-ring-6o0grhv7nid {
+    width: 227px;
+    height: 227px;
+    display: inline-block;
+    overflow: hidden;
+    background: rgba(241, 242, 243, 0);
+    }
+    .ldio-ecb42vfwtb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+    }
+    .ldio-ecb42vfwtb div { box-sizing: content-box; }
+
+
+    .preloader {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        transition: all .3s ease-out;
+    }
+
+    .preloader__loader, .preloader__percents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .preloader__percents {
+        font-size: 2em;
+    }
+
+    .preloader--hide {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
+    .header-active {
+        display: flex;
+    }
